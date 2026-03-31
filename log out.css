@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/*lay out*/
+.Dashboard{
+    display: flex;
+    min-height: 100vh;
+}
+
+/*sidebar*/
+.sidebar{
+    width:220px ;
+    background: rgb(35, 35, 154);
+    color:white ;
+    padding:20px ;
+}
+
+.sidebar .logo{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.sidebar ul{
+    list-style: none;
+}
+
+.sidebar li{
+    padding: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sidebar li:hover,
+.sidebar li.activce {
+    background: rgb(137, 137, 199);
+}
+
+/* Main*/
+.main{
+   flex: 1;
+    padding:20px 30px;
+    background: whitesmoke;
+    
+}
+
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.admin{
+    color: white;
+    background:blue ;
+    padding:8px 16px ;
+    
+}
+
+.isi{
+
+    width: 100%;
+    max-width: 500px;
+   background: white;
+padding: 20px;
+ margin-top: 80px;
+ margin-left: 200px;
+ 
+}
+
+.isi h3, p{
+     
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.batal{
+   color: black;
+   background: white;
+   padding: 5px 10px;
+   cursor: pointer;
+   border: 1px bold;
+   margin-right: 5px;
+}
+
+.logout-action{
+   display: flex;
+   justify-content: space-between;
+   margin-right: 170px;
+   margin-left: 160px;
+}
+
+button{
+    padding: 5px;
+    color: white;
+    background: blue;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+  background: rgb(48, 48, 137);
+}
+
+.btn{
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+
+.sidebar button{
+   width: 100%;
+   padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: left;
+   padding-top:13px;
+   padding-bottom:13px;
+    margin-top: -5px;
+}
+.sidebar button:hover{
+    background: rgb(137, 137, 199);
+}
+.tombol{
+    background:rgb(35, 35, 154) ; 
+    color: white;
+    border: none; 
+    font-size: 15px;
+}

@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 2px solid white;
+    
+}
+
+.menu{
+    display: flex;
+    margin-left: 100px;
+    gap: 50px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    
+    
+}
+
+.dropdown a{
+    color: white;
+}
+
+ .isi-dropdown a{
+    color: black;
+    font-weight:bold ;
+    font-style: italic;
+
+}
+
+.isi-dropdown {
+   position: absolute;
+   visibility: hidden;
+   background: transparent;
+   cursor: pointer;
+   opacity: 0;
+  
+}
+
+.isi-dropdown li{
+   padding: 15px  15px;
+   background: transparent;
+   border: 2px solid blue;
+   
+}
+
+.dropdown:hover .isi-dropdown {
+    opacity: 1;
+    visibility: visible;  
+    transition: .3s linear;
+}
+
+body{
+    background: url("https://images.freecreatives.com/wp-content/uploads/2016/04/Website-Backgrounds-For-Desktop.jpg");
+    background-position: center;
+    background-attachment: fixed;
+}
+
+ img{
+    width: 8%;
+    height: auto;
+}
+
+.logo{
+    margin-left: 50px;
+    overflow-y: hidden;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:40px ;
+    gap: 90px;
+}
+.gambar img{
+    width: 80%;
+}
+
+.hero h2{
+    margin-left: 50px;
+}
+
+.tombol{
+    position: relative;
+    margin-top: 20px;
+   margin-left: 50px;
+}
+button{
+    padding: 10px;
+    color: blue;
+    background: white;
+    font-style: italic;
+    font-weight: bold;
+    border: none;
+}
+
+.second{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    padding: 20px;
+}
+.box{
+    text-align: center;
+    background: transparent;
+    padding: 40px;
+    
+}
+
+.box img{
+    width: 40%;
+    height: auto;
+}
+
+.box p{
+    color: whitesmoke;
+    font-style: oblique;
+    font-weight: smooth;
+}

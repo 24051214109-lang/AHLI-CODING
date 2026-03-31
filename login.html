@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - page</title>
+</head>
+<body>
+    <script src="login.js"></script>
+    <link rel="stylesheet" href="login.css"> 
+
+ <div class="login-container">
+    <h2 >Login</h2>
+
+
+   <form action="proses_login.php" method="POST">
+    <div class="form">
+        <label>Username</label>
+        <input type="text" name="username" placeholder="masukkan username anda" required>
+    </div>
+    
+    <div class="form">
+        <label >Password</label>
+        <input type="password" name="password" placeholder="masukkan password anda" required>
+    </div>
+
+   
+    <button type="submit" name="submit" class="btn-login">LOGIN</button>
+  </form>
+
+    <div class="peringatan"> 
+        <p>Belum punya akun? <a href="Register.html">Daftar</a></p>
+
+     </div>
+     
+     
+</div>
+    
+</body>
+</html>

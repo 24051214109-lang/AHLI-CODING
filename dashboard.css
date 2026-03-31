@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/*lay out*/
+.Dashboard{
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/*sidebar*/
+.sidebar{
+    width:220px ;
+    background: rgb(35, 35, 154);
+    padding:20px;
+    color: white;
+}
+
+
+.sidebar .logo{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.sidebar ul{
+    list-style: none;
+}
+
+.sidebar li{
+    padding: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.sidebar button{
+   width: 100%;
+   padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: left;
+   padding-top:13px;
+   padding-bottom:13px;
+    margin-top: -5px;
+}
+.sidebar button:hover{
+    background: rgb(137, 137, 199);
+}
+.tombol{
+    background:rgb(35, 35, 154) ; 
+    color: white;
+    border: none; 
+    font-size: 15px;
+}
+
+.sidebar li:hover,
+.sidebar li.activce {
+    background: rgb(137, 137, 199);
+}
+
+/* Main*/
+.main{
+    flex: 1;
+    padding:20px 30px;
+    background: whitesmoke;
+}
+
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.admin{
+    color: white;
+    background:blue ;
+    padding:8px 16px ;
+    
+}
+
+.stats{
+    display: flex;
+    gap: 22px;
+    margin-bottom: 30px;
+}
+
+.card{
+    background: white;
+    padding: 15px;
+    box-shadow:  0 4px 10px rgba(0,0,0,0.05);
+    flex:1;
+}
+
+.card p{
+    font-size: 24px;
+    margin: 10px;
+    font-weight: bold;
+   text-align: center;
+}
+
+.card h3{
+    text-align: center;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.chart, .table{
+    background: white;
+    padding:20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-radius: 10px;
+}
+
+.chart-box{
+    margin-top: 15px;
+    background: rgb(194, 190, 190);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#555;
+}
+
+table{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th,td{
+   
+   padding:10px;
+   border-bottom: #555;
+   text-align: left;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.isi-dropdown{
+    visibility: hidden;
+}
+
+.isi-dropdown li a{
+    color: black;
+}
+
+.dropdown:hover .isi-dropdown{
+    visibility: visible;
+    transition: 3s linear;
+}

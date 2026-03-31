@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman',;
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgb(0, 0, 0);
+}
+
+.menu li a {
+   color: white;
+}
+.menu a:hover {
+color: rgb(192, 184, 184);
+}
+body{
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20250328/pngtree-abstract-gradient-background-image_17147401.jpg');
+    background-size: cover;
+}
+
+.menu{
+    display: flex;
+}
+.menu li{
+    position: relative;
+}
+ .menu li a {
+   margin-left: 50px;
+   
+ }
+
+ .dropdown{
+    position: absolute;
+    display: none;
+    background: black;
+    padding: 0 35px;
+   
+ }
+
+ .dropdown li {
+    text-align: center;
+    margin-top: 30px;
+    margin-left: -50px;
+   
+    
+
+   
+ }
+ .menu li:hover .dropdown{
+    display: block;
+ }

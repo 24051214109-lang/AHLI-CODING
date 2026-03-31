@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/*lay out*/
+.Users{
+    display: flex;
+    min-height: 100vh;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/*sidebar*/
+.sidebar{
+    width:220px ;
+    background: rgb(35, 35, 154);
+    color:white ;
+    padding:20px;
+}
+
+
+.sidebar .logo{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.sidebar ul{
+    list-style: none;
+}
+
+.sidebar li{
+    padding: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sidebar button{
+   width: 100%;
+   padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: left;
+   padding-top:13px;
+   padding-bottom:13px;
+    margin-top: -5px;
+}
+.sidebar button:hover{
+    background: rgb(137, 137, 199);
+}
+.tombol{
+    background:rgb(35, 35, 154) ; 
+    color: white;
+    border: none; 
+    font-size: 15px;
+}
+
+.sidebar li:hover,
+.sidebar li.activce {
+    background: rgb(137, 137, 199);
+}
+
+/* Main*/
+.main{
+    flex: 1;
+    padding:20px 30px;
+    background: whitesmoke;
+}
+
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.admin{
+    color: white;
+    background:blue ;
+    padding:8px 16px ;
+    
+}
+
+.searching{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.searching input{
+    width: 80%;
+    padding:15px;
+    border-radius: 7px;
+    border: 1px solid #acc;
+}
+
+.add-button{
+     background: blue;
+     color: black;
+     border: none;
+     padding: 10px 15px;
+     cursor: pointer;
+    margin-right: 102px;
+}
+
+.card{
+    background: white;
+   border-radius: 7px;
+   padding: 20px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead{
+    background: #f0f2f5;
+}
+th,td{
+    padding: 12px;
+    text-align: left;
+}
+ tr{
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+     border-left: 1px solid gray;
+ }
+.edit{
+ background: rgb(189, 189, 239);
+ color: rgb(17, 17, 228);
+ cursor: pointer;
+ padding: 10px 16px;
+ border: 1 solid blue;
+}
+
+.delete{
+background: rgb(239, 155, 155);
+ color: rgb(232, 18, 18);
+ cursor: pointer;
+ padding: 10px 16px;
+ border: 1 solid red;
+}
+
+.pagination{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.page-active{
+    background:blue;
+    color: white;
+    padding: 5px 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.page{
+    background: white;
+    padding: 5px 5px;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+}
